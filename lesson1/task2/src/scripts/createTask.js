@@ -22,3 +22,10 @@ export const onCreateTask = () => {
       renderTasks();
     });
 };
+const task1 = {
+text: 'task1',
+done: false,
+createDate: 23333333333,
+id: '5',
+}
+console.log(createTask(task1));

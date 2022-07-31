@@ -1,5 +1,5 @@
 import { initTodoListHandlers } from './todoList.js';
-import { renderTasks } from './render/renderer.js';
+import { createListItem, renderTasks } from './render/renderer.js';
 import { getTasksList } from './tasksGateway.js';
 import { setItem } from './storage.js';
 

@@ -1,5 +1,4 @@
 import { getItem } from '../storage.js';
-
 const listElem = document.querySelector('.list');
 const compareTasks = (a, b) => {
   if (a.done - b.done !== 0) {
@@ -36,6 +35,8 @@ export const createListItem = ({ text, done, id }) => {
   listItemElem.append(checkboxElem, textElem, deleteBtnElem);
   return listItemElem;
 };
+
+console.log(createListItem({text: 'test1', done: false,id: '7' }));
 export const renderTasks = () => {
   const tasksList = getItem('tasksList') || [];
   listElem.innerHTML = '';
