@@ -7,7 +7,7 @@
 
 
 import calcExpression, {sum, mult} from './calculator/index.js';
-import fetchUser from './profile/gateWay.js';
+import fetchUser from './profile/gateway.js';
 import { printProfile } from './profile/index.js';
 import('./polyfills/array-flatMap.js');
 import('./polyfills/array-flat.js');
