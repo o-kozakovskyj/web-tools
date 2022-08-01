@@ -11,4 +11,5 @@ export default async function fetchUser(userId) {
   } catch (error) {
     throw new Error('Failed to get user data');
   }
-}
+};
+
