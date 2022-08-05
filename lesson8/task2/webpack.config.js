@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = (env, argv) => {
-  const isProduction = argv.mode = 'production';
+  const isProduction = argv.mode === 'production';
   const config = {
     entry: './src/index.js',
     output: {
@@ -21,7 +21,7 @@ module.exports = (env, argv) => {
           use: [
             isProduction
               ? MiniCssExtractPlugin.loader
-              : 'style-loader', 'css-loader', 'sass-loader'
+              : 'style-loader', 'css-loader', 'sass-loader',
           ]
         },
         {
