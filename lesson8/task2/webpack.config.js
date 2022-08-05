@@ -47,7 +47,8 @@ module.exports = (env, argv) => {
       }),
     ],
     devServer: {
-      hot: true
+      port: 9000,
+      hot: true,
     }
   };
   if (isProduction) {
